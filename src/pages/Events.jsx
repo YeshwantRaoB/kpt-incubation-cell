@@ -53,7 +53,7 @@ const Events = () => {
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative border-l-4 border-goldAccent pl-6 space-y-12">
+        <div className="relative space-y-12">
           {events.map((event, index) => (
             <motion.div
               key={index}
@@ -61,16 +61,12 @@ const Events = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative"
             >
-              {/* Dot */}
-              <div className="absolute -left-[14px] top-2 w-4 h-4 rounded-full bg-goldAccent border-2 border-white"></div>
-
               {/* Card */}
               <div className="bg-white/5 border border-blue-800 backdrop-blur-xl rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:scale-[1.01]">
                 <div className="flex items-center gap-2 text-sm text-goldAccent mb-1">
                   <CalendarDays size={16} />
-                  <span>{event.date}</span>
+                  <span className="ml-2">{event.date}</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{event.title}</h3>
                 <p className="text-sm text-gray-300">{event.description}</p>

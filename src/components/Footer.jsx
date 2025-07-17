@@ -4,7 +4,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  Twitter,
   Mail,
   MapPin,
 } from "lucide-react";
@@ -13,22 +12,17 @@ import { Link } from "react-router-dom";
 const socialLinks = [
   {
     icon: <Instagram size={20} />,
-    href: "https://www.instagram.com/yourpage",
+    href: "https://www.instagram.com/kpt_mangalore/",
     label: "Instagram",
   },
   {
     icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/yourpage",
+    href: "https://www.linkedin.com/school/karnataka-govt-polytechnic/",
     label: "LinkedIn",
   },
   {
-    icon: <Twitter size={20} />,
-    href: "https://twitter.com/yourpage",
-    label: "Twitter",
-  },
-  {
     icon: <Facebook size={20} />,
-    href: "https://facebook.com/yourpage",
+    href: "https://www.facebook.com/profile.php?id=110986748946908&_rdr",
     label: "Facebook",
   },
 ];

@@ -95,11 +95,13 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.2 }}
-                className="relative"
+                className="relative flex items-start"
               >
                 <div className="absolute -left-[13px] top-1.5 w-4 h-4 rounded-full bg-goldAccent border-2 border-white"></div>
-                <p className="text-lg font-semibold text-white">{item.year}</p>
-                <p className="text-gray-300 text-sm">{item.event}</p>
+                <div className="ml-6"> {/* Added margin for spacing */}
+                  <p className="text-lg font-semibold text-white">{item.year}</p>
+                  <p className="text-gray-300 text-sm">{item.event}</p>
+                </div>
               </motion.div>
             ))}
           </div>
