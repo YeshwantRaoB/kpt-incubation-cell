@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primaryBlue text-white;
+  font-family: 'Inter', sans-serif;
+}
+/* Add this anywhere in your global CSS */
+.glow-hover {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 12px 3px rgba(255, 215, 0, 0.6); /* gold glow */
+  transform: scale(1.05);
+}
