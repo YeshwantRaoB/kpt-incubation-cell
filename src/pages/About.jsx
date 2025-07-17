@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Lightbulb, Users, Target, Rocket } from "lucide-react";
+import { Lightbulb, Users, Target } from "lucide-react";
 
 const infoCards = [
   {
