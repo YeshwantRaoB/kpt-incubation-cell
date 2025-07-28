@@ -1,0 +1,22 @@
+[build]
+  command = "mvn clean package -DskipTests"
+  publish = "target"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "18.x"
+  JAVA_VERSION = "17"
+  MAVEN_OPTS = "-Xmx2g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8"
+  MAVEN_CACHE = ".m2"
+  MAVEN_FLAGS = "--batch-mode --strict-checksums --no-transfer-progress"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
