@@ -23,12 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:backend": "cd backend && mvn clean package -DskipTests",
-    "build:all": "npm run build:backend && npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "netlify-build": "npm install && npm run build:all",
-    "netlify-dev": "netlify dev"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +46,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "netlify-cli": "^16.0.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }
